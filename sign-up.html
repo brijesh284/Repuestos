@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-up-page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <section class="form-body">
+      <div class="login-inner">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-5 col-md-6">
+            <div class="form-details-wrap">
+              <div class="brand-logo">
+                <a href="login.html">
+                  <img src="img/logo.png" alt="logo" class="img-fluid" />
+                </a>
+              </div>
+              <div class="form-title">
+                <h3>Sign up</h3>
+              </div>
+              <form class="login-wrap">
+                <input type="text" placeholder="Enter your Full Name" />
+                <input
+                  type="email"
+                  placeholder="Enter Your Email"
+                  class="email-wrap"
+                />
+                <div class="pass-wrap">
+                  <input
+                    type="password"
+                    name="password"
+                    placeholder="Password"
+                    autocomplete="current-password"
+                    required=""
+                    id="id_password"
+                  />
+                  <i class="far fa-eye" id="togglePassword"></i>
+                </div>
+                <div class="forget-wrap">
+                  <span>Must be at least 8 characters.</span>
+                  <a href="forgot-password.html">Forget Password</a>
+                </div>
+                <button type="submit">Get started</button>
+              </form>
+              <div class="sign-another">
+                <h2>OR</h2>
+                <button class="mt-0">
+                  <img src="img/google.png" alt="google" class="img-fluid" />
+                  Sign Up with Google
+                </button>
+                <button>
+                  <img src="img/twitter.png" alt="twitter" class="img-fluid" />
+                  Sign in with Twitter
+                </button>
+              </div>
+              <div class="form-footer">
+                <p class="mb-0">
+                  Already have an account? <a href="login.html">Log in</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="form-bg-right">
+              <div class="testimonial">
+                <img
+                  src="img/login.png"
+                  alt="login"
+                  class="img-fluid login-temp"
+                />
+                <h2>Start turning your ideas into reality.</h2>
+                <p>
+                  Create a free account and get full access to all features for
+                  30-days. No credit card needed. Get started in 2 minutes.
+                </p>
+                <div class="users-list">
+                  <ul>
+                    <li>
+                      <div class="user-profile">
+                        <img
+                          src="img/profile1.jpg"
+                          alt="profile1"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user-profile">
+                        <img
+                          src="img/profile2.jpg"
+                          alt="profile2"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user-profile">
+                        <img
+                          src="img/profile1.jpg"
+                          alt="profile1"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </li>
+                    <li>
+                      <div class="user-profile">
+                        <img
+                          src="img/profile2.jpg"
+                          alt="profile2"
+                          class="img-fluid"
+                        />
+                      </div>
+                    </li>
+                  </ul>
+                  <span>Join 40,000+ users</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      const togglePassword = document.querySelector("#togglePassword");
+      const password = document.querySelector("#id_password");
+
+      togglePassword.addEventListener("click", function (e) {
+        // toggle the type attribute
+        const type =
+          password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+        // toggle the eye slash icon
+        this.classList.toggle("fa-eye-slash");
+      });
+    </script>
+  </body>
+</html>
