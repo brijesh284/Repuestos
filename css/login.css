@@ -6,7 +6,7 @@
 }
 body {
   background-color: #fff;
-  font-family: Inter-Medium;
+  font-family: PTSans-Regular;
   font-weight: 400;
   color: #18181c;
   transition: all ease-in-out 0.3s;
@@ -22,7 +22,7 @@ button {
   font-size: 14px;
   text-transform: capitalize;
   height: 44px;
-  font-family: Inter-Medium;
+  font-family: PTSans-Regular;
 }
 ::placeholder {
   color: #748498;
@@ -43,11 +43,11 @@ button {
 .form-details-wrap .form-title h3 {
   font-size: 32px;
   margin-bottom: 10px;
-  font-family: Inter-ExtraBold;
+  font-family: AdventPro-Bold;
 }
 .form-details-wrap .form-title p {
   font-size: 16px;
-  font-family: Inter-Medium;
+  font-family: PTSans-Regular;
   color: #5f6989;
   margin-bottom: 0px;
 }
@@ -129,25 +129,6 @@ button {
   display: none;
   color: green;
 }
-.sign-another h2 {
-  font-size: 14px;
-  text-align: center;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.sign-another button {
-  font-family: Inter-SemiBold;
-  margin-top: 15px;
-  background-color: #fff;
-  border: 1px solid #e9e8ea;
-}
-.sign-another button:hover {
-  background-color: rgb(51 52 142 / 3%);
-}
-.sign-another button img {
-  width: 22px;
-  margin-right: 8px;
-}
 .form-footer {
   margin-top: 40px;
   text-align: center;
@@ -157,7 +138,7 @@ button {
 }
 .form-footer p a {
   color: #000;
-  font-family: Inter-SemiBold;
+  font-family: PTSans-Bold;
 }
 .form-bg-right {
   height: 100vh;
@@ -192,10 +173,11 @@ button {
   font-size: 60px;
   font-weight: 500;
   margin-bottom: 24px;
+  font-family: AdventPro-BoldItalic;
 }
 .form-bg-right .testimonial p {
   font-size: 18px;
-  font-family: Inter-Medium;
+  font-family: PTSans-Regular;
   color: #eaecf0;
   margin-bottom: 0px;
 }

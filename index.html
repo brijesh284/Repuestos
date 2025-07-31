@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repuestos - Home</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav header-btn">
+              <li class="nav-item login-btn dropdown">
+                <a
+                  class="nav-link dropdown-toggle menu-list"
+                  href="#"
+                  id="login"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Login
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="login">
+                  <li><a class="dropdown-item" href="#">Customer</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Auto Parts Store</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Workshop</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item register-btn dropdown">
+                <a
+                  class="nav-link dropdown-toggle menu-list"
+                  href="#"
+                  id="Register"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Register
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="Register">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero-section -->
+    <section class="hero-section">
+      <div class="container-fluid">
+        <div class="hero-inner-section">
+          <h1>Services and Specializations</h1>
+        </div>
+      </div>
+    </section>
+    <!--search-section  -->
+    <section class="search-section">
+      <div class="container">
+        <div class="search-inner-section">
+          <!-- Search -->
+          <div class="filter-box filter-box-one">
+            <label class="form-label">Search</label>
+            <div class="d-flex align-items-center">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="what are you looking..."
+              />
+              <img src="img/search-black.svg" alt="search-black" />
+            </div>
+          </div>
+
+          <!-- City -->
+          <div class="filter-box">
+            <label class="form-label">City</label>
+            <select class="form-select">
+              <option selected>Select City</option>
+              <option>New York</option>
+            </select>
+          </div>
+
+          <!-- Brand -->
+          <div class="filter-box">
+            <label class="form-label">Brand</label>
+            <select class="form-select">
+              <option selected>Select Brand</option>
+              <option>Honda</option>
+            </select>
+          </div>
+
+          <!-- Model -->
+          <div class="filter-box">
+            <label class="form-label">Model</label>
+            <select class="form-select">
+              <option selected>Select Model</option>
+              <option>Civic</option>
+            </select>
+          </div>
+
+          <!-- Year -->
+          <div class="filter-box">
+            <label class="form-label">Year</label>
+            <select class="form-select">
+              <option selected>Select Year</option>
+              <option>2024</option>
+            </select>
+          </div>
+
+          <!-- Search Button -->
+          <button class="search-button">
+            <img src="img/search-white.svg" alt="search-white" />
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--Request Tool section  -->
+    <section class="request-tool-section">
+      <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-lg-6">
+            <div class="request-tool-inner">
+              <div class="request-tool-head">
+                <h2>Quick Whatsapp Request Tool</h2>
+                <p>
+                  Not sure who has what you’re looking for? <br />
+                  Send a quick request and we’ll forwardif for you!
+                </p>
+              </div>
+              <div class="parts-form-wrapper">
+                <form class="parts-form">
+                  <!-- Name -->
+                  <div class="mb-3">
+                    <input type="text" class="parts-input" placeholder="Name" />
+                  </div>
+
+                  <!-- WhatsApp -->
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="parts-input"
+                      placeholder="Whatsapp Number"
+                    />
+                  </div>
+
+                  <!-- Brand & Model -->
+                  <div class="row g-3 mb-3">
+                    <div class="col">
+                      <select class="parts-select">
+                        <option selected>Brand</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select class="parts-select">
+                        <option selected>Model</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- City & Year -->
+                  <div class="row g-3 mb-3">
+                    <div class="col">
+                      <select class="parts-select">
+                        <option selected>City</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <select class="parts-select">
+                        <option selected>Year</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Part Name -->
+                  <div class="mb-3">
+                    <select class="parts-select">
+                      <option selected>Enter Part Name</option>
+                    </select>
+                  </div>
+
+                  <!-- Upload Image -->
+                  <div class="mb-3">
+                    <label
+                      for="parts-upload"
+                      class="parts-upload-label d-block"
+                    >
+                      <img src="img/upload.svg" alt="" />
+                      <p>Upload Image</p>
+                    </label>
+                    <input type="file" id="parts-upload" class="d-none" />
+                  </div>
+
+                  <!-- Submit -->
+                  <button type="submit" class="parts-submit-btn">
+                    <img src="img/whatsapp.svg" alt="whatsapp" /> Sent Request
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- workshop-finder -->
+    <section class="workshop-finder">
+      <div class="container">
+        <div
+          class="header-area d-flex justify-content-between align-items-center flex-wrap"
+        >
+          <div class="text-area">
+            <h2 class="title">Workshop Finder</h2>
+            <p class="subtitle">
+              Want to sell something? <a href="#">Register as a Seller</a>
+            </p>
+          </div>
+
+          <form class="form-area">
+            <select class="custom-select">
+              <option selected>City</option>
+              <option>Ahmedabad</option>
+              <option>Surat</option>
+            </select>
+            <select class="custom-select">
+              <option selected>Specialty</option>
+              <option>Engine</option>
+              <option>Tyres</option>
+            </select>
+            <button type="submit" class="search-btn">Search</button>
+          </form>
+        </div>
+
+        <div class="image-box">
+          <img
+            src="img/workshop-finder.png"
+            alt="Workshop"
+            class="workshop-image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- marketplace-section -->
+    <section class="marketplace-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="text-box">
+              <h2>Used Parts & Marketplace</h2>
+              <p>Want to sell something? Register as a seller</p>
+              <a href="#" class="register-btn">Register</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="image-marketplace">
+              <img src="img/marketplace-bg.png" alt="Marketplace Image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- platform-steps -->
+
+    <section class="platform-steps">
+      <div class="container">
+        <h2 class="text-center">How the Platform Works</h2>
+
+        <!-- Step 1 -->
+        <div class="bg-red text-white">
+          <div class="row align-items-center">
+            <div class="col-md-6 d-flex align-items-center gap-3">
+              <div class="step-circle">1</div>
+              <p class="mb-0">
+                Enter Your Request or <br />
+                use the Search
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="img/platform-steps-1.png"
+                class="img-fluid h-100 w-100 object-fit-cover"
+                alt="Step 1"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="bg-orange text-white">
+          <div class="row align-items-center">
+            <div class="col-md-6 d-flex align-items-center gap-3">
+              <div class="step-circle">2</div>
+              <p class="mb-0">
+                Connect directly with <br />
+                vendors or workshops
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="img/platform-steps-2.png"
+                class="img-fluid h-100 w-100 object-fit-cover"
+                alt="Step 2"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="bg-yellow text-white">
+          <div class="row align-items-center">
+            <div class="col-md-6 d-flex align-items-center gap-3">
+              <div class="step-circle">3</div>
+              <p class="mb-0">
+                Get what you need quickly, <br />
+                safely, and locally
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                src="img/platform-steps-3.png"
+                class="img-fluid h-100 w-100 object-fit-cover"
+                alt="Step 3"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlighted Businesses Section -->
+    <section class="highlighted-section">
+      <div class="container text-center">
+        <h2>Highlighted Businesses</h2>
+        <p class="text-muted">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+
+        <div class="highlight-main-wrap">
+          <div class="highlight-inner">
+            <div
+              class="highlight-card"
+              style="background-image: url('img/Highlighted-1.png')"
+            >
+              <p>The Walt Disney Company</p>
+            </div>
+          </div>
+          <div class="highlight-inner">
+            <div
+              class="highlight-card"
+              style="background-image: url('img/Highlighted-2.png')"
+            >
+              <p>Johnson & Johnson</p>
+            </div>
+          </div>
+          <div class="highlight-inner">
+            <div
+              class="highlight-card"
+              style="background-image: url('img/Highlighted-3.png')"
+            >
+              <p>Bank of America</p>
+            </div>
+          </div>
+          <div class="highlight-inner">
+            <div
+              class="highlight-card"
+              style="background-image: url('img/Highlighted-4.png')"
+            >
+              <p>Ferrari</p>
+            </div>
+          </div>
+          <div class="highlight-inner">
+            <div
+              class="highlight-card"
+              style="background-image: url('img/Highlighted-5.png   ')"
+            >
+              <p>eBay</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container text-center">
+        <img src="img/footer-logo.png" alt="Logo" class="footer-logo mb-4" />
+
+        <div class="footer-links">
+          <a href="#">About us</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact us</a>
+          <a href="#">FAQ's</a>
+        </div>
+
+        <div class="social-icons mb-4">
+          <a href="#"><img src="img/tiktok 1.svg" alt="tiktok" /></a>
+          <a href="#"><img src="img/instagram 1.svg" alt="" /></a>
+          <a href="#"><img src="img/whatsapp-footer.svg" alt="" /></a>
+        </div>
+
+        <div class="footer-bottom">
+          <hr class="bg-light" />
+          <p>Copyright © 2025 - repuestosecuador.com | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

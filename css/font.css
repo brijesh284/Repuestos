@@ -1,24 +1,30 @@
+/*  AdventPro */
 @font-face {
-  font-family: Inter-Medium;
-  src: url(..//fonts/Inter-Medium.ttf);
+  font-family: AdventPro-Medium;
+  src: url(..//fonts/AdventPro_Expanded-Medium.ttf);
 }
 @font-face {
-  font-family: Inter-Regular;
-  src: url(..//fonts/Inter-Regular.ttf);
+  font-family: AdventPro-Regular;
+  src: url(..//fonts/AdventPro_Expanded-Regular.ttf);
 }
 @font-face {
-  font-family: Inter-Light;
-  src: url(..//fonts/Inter-Light.ttf);
+  font-family: AdventPro-Bold;
+  src: url(..//fonts/AdventPro_Expanded-Bold.ttf);
 }
 @font-face {
-  font-family: Inter-SemiBold;
-  src: url(..//fonts/Inter-SemiBold.ttf);
+  font-family: AdventPro-BoldItalic;
+  src: url(..//fonts/AdventPro_Expanded-BoldItalic.ttf);
+}
+/* PTSans */
+@font-face {
+  font-family: PTSans-Italic;
+  src: url(..//fonts/PTSans-Italic.ttf);
 }
 @font-face {
-  font-family: Inter-Bold;
-  src: url(..//fonts/Inter-Bold.ttf);
+  font-family: PTSans-Regular;
+  src: url(..//fonts/PTSans-Regular.ttf);
 }
 @font-face {
-  font-family: Inter-ExtraBold;
-  src: url(..//fonts/Inter-ExtraBold.ttf);
+  font-family: PTSans-Bold;
+  src: url(..//fonts/PTSans-Bold.ttf);
 }
