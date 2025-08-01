@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Repuestos - Home</title>
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -179,12 +182,18 @@
                   <div class="row g-3 mb-3">
                     <div class="col">
                       <select class="parts-select">
-                        <option selected>Brand</option>
+                        <option disabled selected>Brand</option>
+                        <option>Samsung</option>
+                        <option>Apple</option>
+                        <option>Vivo</option>
                       </select>
                     </div>
                     <div class="col">
                       <select class="parts-select">
-                        <option selected>Model</option>
+                        <option disabled selected>Model</option>
+                        <option>Samsung</option>
+                        <option>Apple</option>
+                        <option>Vivo</option>
                       </select>
                     </div>
                   </div>
@@ -193,12 +202,17 @@
                   <div class="row g-3 mb-3">
                     <div class="col">
                       <select class="parts-select">
-                        <option selected>City</option>
+                        <option disabled selected>City</option>
+                        <option>Ahmedabad</option>
+                        <option>Surat</option>
                       </select>
                     </div>
                     <div class="col">
                       <select class="parts-select">
-                        <option selected>Year</option>
+                        <option disabled selected>Year</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
                       </select>
                     </div>
                   </div>
@@ -206,7 +220,10 @@
                   <!-- Part Name -->
                   <div class="mb-3">
                     <select class="parts-select">
-                      <option selected>Enter Part Name</option>
+                      <option disabled selected>Enter Part Name</option>
+                      <option>Samsung</option>
+                      <option>Apple</option>
+                      <option>Vivo</option>
                     </select>
                   </div>
 
@@ -236,9 +253,7 @@
     <!-- workshop-finder -->
     <section class="workshop-finder">
       <div class="container">
-        <div
-          class="header-area d-flex justify-content-between align-items-center flex-wrap"
-        >
+        <div class="header-area">
           <div class="text-area">
             <h2 class="title">Workshop Finder</h2>
             <p class="subtitle">
@@ -248,12 +263,12 @@
 
           <form class="form-area">
             <select class="custom-select">
-              <option selected>City</option>
+              <option disabled selected>City</option>
               <option>Ahmedabad</option>
               <option>Surat</option>
             </select>
             <select class="custom-select">
-              <option selected>Specialty</option>
+              <option disabled selected>Specialty</option>
               <option>Engine</option>
               <option>Tyres</option>
             </select>

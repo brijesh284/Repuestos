@@ -30,6 +30,11 @@ button {
 img {
   width: 100%;
 }
+select option {
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+}
 /* Header */
 .main-header {
 }
@@ -152,7 +157,7 @@ img {
 .form-control,
 .form-select {
   border: none;
-  padding: 0;
+  padding: 10px;
   box-shadow: none !important;
   color: rgba(1, 1, 1, 1);
   font-size: 18px;
@@ -161,7 +166,7 @@ img {
 .form-control:focus,
 .form-select:focus {
   border: none;
-  padding: 0;
+  padding: 10px;
   box-shadow: none !important;
   color: rgba(1, 1, 1, 1);
   font-size: 18px;
@@ -186,22 +191,6 @@ img {
   background-color: #cc0000;
 }
 
-@media (max-width: 768px) {
-  .filter-box {
-    width: 100%;
-  }
-
-  .search-button {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .filter-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-}
-
 /* request-tool-section */
 .request-tool-section {
   margin-top: 80px;
@@ -212,13 +201,12 @@ img {
   background-repeat: no-repeat;
 }
 .parts-form-wrapper {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .request-tool-section .request-tool-inner {
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
   padding: 60px 40px;
 }
 
@@ -314,25 +302,35 @@ img {
 }
 .parts-select {
   border-radius: 10px;
-  padding: 18px 20px 18px 48px; /* Extra left padding for arrow */
+  padding: 16px 48px 16px 20px;
   border: none;
-  box-shadow: none;
-  width: 100%;
+  box-shadow: 0px 4px 45px rgba(120, 123, 146, 0.15);
   font-size: 18px;
-  color: rgba(1, 1, 1, 1);
+  color: #000;
+  background-color: #fff;
+  background-image: url("..//img/arrow-circle-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 30px 30px;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: url("..//img/arrow-circle-down.svg") no-repeat right 16px center;
-  background-size: 30px 30px;
-  background-color: white; /* or your preferred background */
+}
+.parts-select option:disabled {
+  color: #748498;
 }
 /* workshop-finder */
 .workshop-finder {
   padding: 80px 0;
   background: #fff;
 }
-
+.workshop-finder .header-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  gap: 16px;
+}
 .title {
   font-weight: 700;
   font-size: 54px;
@@ -372,7 +370,9 @@ img {
   box-shadow: 0px 4px 45px 0px rgba(120, 123, 146, 0.15);
   color: rgba(1, 1, 1, 1);
 }
-
+.custom-select:focus {
+  outline: none;
+}
 .search-btn {
   font-size: 16px;
   padding: 14px 24px;
@@ -624,4 +624,177 @@ img {
 
 .footer-bottom a {
   color: rgba(255, 255, 255, 1);
+}
+/*  */
+@media only screen and (max-width: 1024px) {
+  .main-header .navbar-brand {
+    width: 140px;
+  }
+  .platform-steps p {
+    font-size: 28px;
+    font-family: AdventPro-Bold;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .main-header .navbar .navbar-toggler {
+    width: 60px;
+  }
+  .main-header .header-btn {
+    gap: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+  }
+  .filter-box {
+    width: 48%;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .workshop-finder .header-area {
+    display: block;
+  }
+  .workshop-finder .header-area .text-area {
+    text-align: center;
+  }
+  .workshop-finder .header-area .form-area {
+    margin-top: 20px;
+  }
+  .workshop-finder .header-area .form-area .custom-select {
+    width: 100%;
+  }
+  .workshop-finder,
+  .platform-steps {
+    padding: 40px 0px;
+  }
+  .marketplace-section::after {
+    content: none;
+  }
+  .marketplace-section .text-box {
+    text-align: center;
+  }
+  .marketplace-section .text-box h2 {
+    color: #000;
+  }
+  .marketplace-section .text-box p {
+    color: #000;
+  }
+  .marketplace-section .text-box .register-btn {
+    display: block;
+    margin: 20px auto 20px;
+  }
+  .bg-red,
+  .bg-orange {
+    margin-bottom: 30px;
+  }
+  .step-circle {
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+  }
+  .platform-steps p {
+    font-size: 18px;
+  }
+  .highlighted-section {
+    padding: 40px 0px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .hero-section .hero-inner-section {
+    padding: 30px 0px;
+  }
+  .filter-box {
+    width: 100%;
+  }
+
+  .search-button {
+    width: 100%;
+    margin-left: 0;
+  }
+  .object-fit-cover {
+    margin-top: 30px;
+  }
+  .platform-steps h2 {
+    margin-bottom: 30px;
+  }
+  .highlight-main-wrap {
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-around;
+  }
+  .highlight-main-wrap .highlight-inner {
+    width: 48%;
+  }
+  .highlight-card {
+    height: 320px;
+  }
+  .request-tool-section .request-tool-inner .request-tool-head h2,
+  .title,
+  .marketplace-section .text-box h2,
+  .platform-steps h2,
+  .highlighted-section h2 {
+    font-size: 38px;
+  }
+}
+@media only screen and (max-width: 525px) {
+  .hero-section .hero-inner-section h1 {
+    font-size: 44px;
+  }
+  .highlight-main-wrap .highlight-inner {
+    width: 45%;
+  }
+  .request-tool-section .request-tool-inner .request-tool-head h2,
+  .title,
+  .marketplace-section .text-box h2,
+  .platform-steps h2,
+  .highlighted-section h2 {
+    font-size: 30px;
+  }
+  .request-tool-section .request-tool-inner {
+    padding: 60px 20px;
+  }
+  .custom-select {
+    padding: 15px 10px;
+    min-height: 60px;
+    min-width: 70px;
+    font-size: 14px;
+  }
+  .footer-links {
+    margin: 30px 0px;
+  }
+  .footer-links a {
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .request-tool-section .request-tool-inner {
+    padding: 40px 10px;
+  }
+  .request-tool-section .request-tool-inner .request-tool-head h2,
+  .title,
+  .marketplace-section .text-box h2,
+  .platform-steps h2,
+  .highlighted-section h2 {
+    font-size: 24px;
+  }
+  .bg-red {
+    padding: 20px 20px 0px 20px;
+    overflow: hidden;
+  }
+  .bg-orange {
+    padding: 20px 20px 0px 20px;
+    overflow: hidden;
+  }
+  .bg-yellow {
+    padding: 20px 20px 0px 20px;
+    overflow: hidden;
+  }
+  .highlight-card {
+    height: 230px;
+  }
 }
