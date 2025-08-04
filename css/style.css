@@ -286,7 +286,7 @@ select option {
   background-color: rgba(42, 181, 64, 1);
   color: white;
   border: none;
-  padding: 16px 16px;
+  padding: 24px 16px;
   border-radius: 0px 16px;
   margin: 37px auto 0px;
   font-size: 16px;
@@ -372,9 +372,9 @@ select option {
   outline: none;
 }
 .search-btn {
-  font-size: 16px;
+  font-size: 18px;
   padding: 14px 24px;
-  width: 110px;
+  width: 120px;
   min-height: 60px;
   display: flex;
   align-items: center;
@@ -468,12 +468,30 @@ select option {
 }
 /* platform-steps */
 .platform-steps {
-  padding: 80px 0px;
+  padding: 80px 0px 0px;
 }
 .platform-steps h2 {
   font-size: 54px;
   font-family: AdventPro-Bold;
   margin-bottom: 64px;
+}
+.platform-steps .platform-text-inner {
+  padding: 70px 0px;
+}
+.scroll-section {
+  position: relative;
+  height: auto; /* Enough scroll height for 3 sticky steps */
+}
+
+.step {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
 }
 .step-circle {
   width: 80px;
@@ -490,29 +508,31 @@ select option {
   font-size: 38px;
   font-family: AdventPro-Bold;
 }
-
 /* Background gradients */
 .bg-red {
   background: linear-gradient(0deg, #e20613, #e20613),
     linear-gradient(92.03deg, rgba(0, 0, 0, 0) -0.57%, rgba(0, 0, 0, 0.7) 100%);
   border-radius: 0px 56px;
-  padding: 50px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .bg-orange {
   background: linear-gradient(0deg, #e25a06, #e25a06),
     linear-gradient(92.03deg, rgba(0, 0, 0, 0) -0.57%, rgba(0, 0, 0, 0.7) 100%);
   border-radius: 0px 56px;
-  padding: 50px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
   margin-bottom: 60px;
+  overflow: hidden;
 }
 
 .bg-yellow {
   background: linear-gradient(0deg, #e2a006, #e2a006),
     linear-gradient(92.03deg, rgba(0, 0, 0, 0) -0.57%, rgba(0, 0, 0, 0.7) 100%);
   border-radius: 0px 56px;
-  padding: 50px 50px 0px 50px;
+  padding: 0px 50px 0px 50px;
+  overflow: hidden;
 }
 
 .object-fit-cover {
@@ -523,6 +543,8 @@ select option {
   padding: 80px 0px;
   border-radius: 0px 0px 40px 40px;
   background-color: #fff;
+  position: relative;
+  z-index: 9999;
 }
 
 .highlighted-section h2 {
@@ -624,6 +646,16 @@ select option {
   color: rgba(255, 255, 255, 1);
 }
 /*  */
+@media only screen and (max-width: 1399px) {
+  .platform-steps .platform-text-inner {
+    padding: 50px 0px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .platform-steps p {
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .main-header .navbar-brand {
     width: 140px;
@@ -720,6 +752,9 @@ select option {
   .platform-steps h2 {
     margin-bottom: 30px;
   }
+  .platform-steps .platform-text-inner {
+    padding: 30px 0px 0px;
+  }
   .highlight-main-wrap {
     flex-wrap: wrap;
     gap: 16px;
@@ -745,6 +780,11 @@ select option {
   }
   .highlight-main-wrap .highlight-inner {
     width: 45%;
+  }
+  .bg-red,
+  .bg-orange,
+  .bg-yellow {
+    padding: 0px 30px 0px 30px;
   }
   .request-tool-section .request-tool-inner .request-tool-head h2,
   .title,
@@ -781,16 +821,13 @@ select option {
     font-size: 24px;
   }
   .bg-red {
-    padding: 20px 20px 0px 20px;
-    overflow: hidden;
+    padding: 0px 20px 0px 20px;
   }
   .bg-orange {
-    padding: 20px 20px 0px 20px;
-    overflow: hidden;
+    padding: 0px 20px 0px 20px;
   }
   .bg-yellow {
-    padding: 20px 20px 0px 20px;
-    overflow: hidden;
+    padding: 0px 20px 0px 20px;
   }
   .highlight-card {
     height: 230px;

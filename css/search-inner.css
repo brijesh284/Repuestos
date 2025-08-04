@@ -434,7 +434,7 @@
   align-items: center;
 }
 
-.navigation-button button {
+.navigation-button a {
   width: auto;
   display: flex;
   justify-content: center;
@@ -450,9 +450,11 @@
   border-bottom-left-radius: 16px;
   color: #ffffff;
   font-family: PTSans-Bold;
+  min-height: 60px;
+  text-decoration: none;
 }
 
-.navigation-button button img {
+.navigation-button a img {
   width: 24px;
 }
 
