@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <title>Repuestos - Search</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="img/search-logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav header-btn">
+              <li class="nav-item login-btn dropdown">
+                <a
+                  class="nav-link dropdown-toggle menu-list"
+                  href="#"
+                  id="login"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Login
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="login">
+                  <li><a class="dropdown-item" href="#">Customer</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Auto Parts Store</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Workshop</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item register-btn dropdown">
+                <a
+                  class="nav-link dropdown-toggle menu-list"
+                  href="#"
+                  id="Register"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Register
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="Register">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="search-section">
+      <div class="search-inner-section">
+        <h1>Explore auto parts stores in your city</h1>
+      </div>
+    </section>
+
+    <section class="search-results-section">
+      <div class="container">
+        <div class="row">
+          <!-- Left Panel - Filters -->
+          <div class="col-lg-3">
+            <div class="filters-panel">
+              <div class="filters-header">
+                <img src="img/filter.svg" alt="" />
+                <span class="filters-title">Filters</span>
+                <span class="active-filters-badge">01</span>
+                <button class="modal-close-btn" id="modalCloseBtn">×</button>
+              </div>
+
+              <!-- Location Filter -->
+              <div class="filter-group">
+                <label class="filter-label">Location</label>
+                <div class="city-dropdown">
+                  <select
+                    name="select-city"
+                    id="select-city"
+                    class="select-city"
+                  >
+                    <option value="None" disabled selected>Select City</option>
+                    <option value="Quito">Quito</option>
+                    <option value="Guayaquil">Guayaquil</option>
+                    <option value="Cuenca">Cuenca</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Part's Category Filter -->
+              <div class="filter-group">
+                <label class="filter-label">Part's Category</label>
+                <div class="filter-options">
+                  <div class="filter-option">
+                    <input
+                      type="radio"
+                      name="category"
+                      id="gearbox"
+                      class="filter-radio"
+                    />
+                    <label for="gearbox">Gearbox</label>
+                  </div>
+                  <div class="filter-option">
+                    <input
+                      type="radio"
+                      name="category"
+                      id="battery"
+                      class="filter-radio"
+                      checked
+                    />
+                    <label for="battery">Battery</label>
+                  </div>
+                  <div class="filter-option">
+                    <input
+                      type="radio"
+                      name="category"
+                      id="alternator"
+                      class="filter-radio"
+                    />
+                    <label for="alternator">Alternator</label>
+                  </div>
+                  <div class="filter-option">
+                    <input
+                      type="radio"
+                      name="category"
+                      id="radiator"
+                      class="filter-radio"
+                    />
+                    <label for="radiator">Radiator</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Stores Name Filter -->
+              <div class="filter-group">
+                <label class="filter-label">Stores Name</label>
+                <div class="filter-options">
+                  <div class="filter-option">
+                    <input
+                      type="radio"
+                      name="store"
+                      id="store1"
+                      class="filter-radio"
+                    />
+                    <label for="store1">Store 1</label>
+                  </div>
+                  <div class="filter-option">
+                    <input
+                      type="radio"
+                      name="store"
+                      id="store2"
+                      class="filter-radio"
+                    />
+                    <label for="store2">Store 2</label>
+                  </div>
+                  <div class="filter-option">
+                    <input
+                      type="radio"
+                      name="store"
+                      id="store3"
+                      class="filter-radio"
+                    />
+                    <label for="store3">Store 3</label>
+                  </div>
+                  <div class="filter-option">
+                    <input
+                      type="radio"
+                      name="store"
+                      id="store4"
+                      class="filter-radio"
+                    />
+                    <label for="store4">Store 4</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-screen"></div>
+          </div>
+
+          <div class="col-lg-9">
+            <div class="search-results-container">
+              <div class="mobile-filter-btn-container">
+                <button class="mobile-filter-btn" id="mobileFilterBtn">
+                  <img src="img/filter.svg" alt="Filter" />
+                  <span>Filters</span>
+                  <span class="mobile-filter-badge">01</span>
+                </button>
+              </div>
+
+              <h2 class="search-results-title">Search results</h2>
+
+              <div class="search-results-list">
+                <!-- Search Result Card 1 -->
+                <div class="search-result-card">
+                  <div class="result-image">
+                    <img
+                      src="img/Search-6.png"
+                      alt="Store 1"
+                      class="store-image"
+                    />
+                  </div>
+                  <div class="result-info">
+                    <h3 class="store-name">Store Name</h3>
+                    <p class="store-location">City Location</p>
+                    <p class="store-categories">Categories/ Specialties</p>
+                  </div>
+                  <div class="result-contact">
+                    <div class="contact-phone">
+                      <img src="img/call.svg" alt="" />
+                      <span>+1 1234-456-785</span>
+                    </div>
+                    <button class="btn btn-whatsapp">
+                      <img src="img/whatsapp.svg" title="whatsapp" />
+                      Whatsapp
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Search Result Card 2 -->
+                <div class="search-result-card">
+                  <div class="result-image">
+                    <img
+                      src="img/Search-5.png"
+                      alt="Store 2"
+                      class="store-image"
+                    />
+                  </div>
+                  <div class="result-info">
+                    <h3 class="store-name">Store Name</h3>
+                    <p class="store-location">City Location</p>
+                    <p class="store-categories">Categories/ Specialties</p>
+                  </div>
+                  <div class="result-contact">
+                    <div class="contact-phone">
+                      <img src="img/call.svg" alt="" />
+                      <span>+1 1234-456-785</span>
+                    </div>
+                    <button class="btn btn-whatsapp">
+                      <img src="img/whatsapp.svg" title="whatsapp" />
+                      Whatsapp
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Search Result Card 3 -->
+                <div class="search-result-card">
+                  <div class="result-image">
+                    <img
+                      src="img/Search-4.png"
+                      alt="Store 3"
+                      class="store-image"
+                    />
+                  </div>
+                  <div class="result-info">
+                    <h3 class="store-name">Store Name</h3>
+                    <p class="store-location">City Location</p>
+                    <p class="store-categories">Categories/ Specialties</p>
+                  </div>
+                  <div class="result-contact">
+                    <div class="contact-phone">
+                      <img src="img/call.svg" alt="" />
+                      <span>+1 1234-456-785</span>
+                    </div>
+                    <button class="btn btn-whatsapp">
+                      <img src="img/whatsapp.svg" title="whatsapp" />
+                      Whatsapp
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Search Result Card 4 -->
+                <div class="search-result-card">
+                  <div class="result-image">
+                    <img
+                      src="img/Search-3.png"
+                      alt="Store 4"
+                      class="store-image"
+                    />
+                  </div>
+                  <div class="result-info">
+                    <h3 class="store-name">Store Name</h3>
+                    <p class="store-location">City Location</p>
+                    <p class="store-categories">Categories/ Specialties</p>
+                  </div>
+                  <div class="result-contact">
+                    <div class="contact-phone">
+                      <img src="img/call.svg" alt="" />
+                      <span>+1 1234-456-785</span>
+                    </div>
+                    <button class="btn btn-whatsapp">
+                      <img src="img/whatsapp.svg" title="whatsapp" />
+                      Whatsapp
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Search Result Card 5 -->
+                <div class="search-result-card">
+                  <div class="result-image">
+                    <img
+                      src="img/Search-2.png"
+                      alt="Store 5"
+                      class="store-image"
+                    />
+                  </div>
+                  <div class="result-info">
+                    <h3 class="store-name">Store Name</h3>
+                    <p class="store-location">City Location</p>
+                    <p class="store-categories">Categories/ Specialties</p>
+                  </div>
+                  <div class="result-contact">
+                    <div class="contact-phone">
+                      <img src="img/call.svg" alt="" />
+                      <span>+1 1234-456-785</span>
+                    </div>
+                    <button class="btn btn-whatsapp">
+                      <img src="img/whatsapp.svg" title="whatsapp" />
+                      Whatsapp
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Search Result Card 6 -->
+                <div class="search-result-card">
+                  <div class="result-image">
+                    <img
+                      src="img/Search-1.png"
+                      alt="Store 6"
+                      class="store-image"
+                    />
+                  </div>
+                  <div class="result-info">
+                    <h3 class="store-name">Store Name</h3>
+                    <p class="store-location">City Location</p>
+                    <p class="store-categories">Categories/ Specialties</p>
+                  </div>
+                  <div class="result-contact">
+                    <div class="contact-phone">
+                      <img src="img/call.svg" alt="" />
+                      <span>+1 1234-456-785</span>
+                    </div>
+                    <button class="btn btn-whatsapp">
+                      <img src="img/whatsapp.svg" title="whatsapp" />
+                      Whatsapp
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="container text-center">
+        <img src="img/footer-logo.png" alt="Logo" class="footer-logo mb-4" />
+
+        <div class="footer-links">
+          <a href="#">About us</a>
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Contact us</a>
+          <a href="#">FAQ's</a>
+        </div>
+
+        <div class="social-icons mb-4">
+          <a href="#"><img src="img/tiktok 1.svg" alt="tiktok" /></a>
+          <a href="#"><img src="img/instagram 1.svg" alt="" /></a>
+          <a href="#"><img src="img/whatsapp-footer.svg" alt="" /></a>
+        </div>
+
+        <div class="footer-bottom">
+          <hr class="bg-light" />
+          <p>Copyright © 2025 - repuestosecuador.com | All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/search.js"></script>
+  </body>
+</html>

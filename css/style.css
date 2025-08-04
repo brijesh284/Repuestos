@@ -36,8 +36,6 @@ select option {
   padding: 10px;
 }
 /* Header */
-.main-header {
-}
 .main-header .navbar-brand {
   width: 200px;
 }
@@ -157,7 +155,7 @@ select option {
 .form-control,
 .form-select {
   border: none;
-  padding: 10px;
+  padding: 0px 10px;
   box-shadow: none !important;
   color: rgba(1, 1, 1, 1);
   font-size: 18px;
@@ -166,7 +164,7 @@ select option {
 .form-control:focus,
 .form-select:focus {
   border: none;
-  padding: 10px;
+  padding: 0px 10px;
   box-shadow: none !important;
   color: rgba(1, 1, 1, 1);
   font-size: 18px;
