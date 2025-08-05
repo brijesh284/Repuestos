@@ -764,7 +764,12 @@ a {
   .search-button {
     width: 100%;
     margin-left: 0;
+    height: 65px;
   }
+  .search-section a {
+    width: 100%;
+  }
+
   .object-fit-cover {
     margin-top: 30px;
   }
