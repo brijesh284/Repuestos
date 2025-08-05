@@ -483,24 +483,30 @@
       }
     </script>
 
-    <!-- GSAP + ScrollTrigger Scripts -->
     <script src="js/gsap.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
 
     <script>
       gsap.registerPlugin(ScrollTrigger);
 
-      const steps = document.querySelectorAll(".step");
+      // Run only if screen width is greater than 768px (desktop/tablet)
+      if (window.innerWidth > 768) {
+        const steps = document.querySelectorAll(".step");
 
-      steps.forEach((step) => {
-        ScrollTrigger.create({
-          trigger: step,
-          start: "top top",
-          end: "+=100%",
-          pin: true,
-          pinSpacing: false,
+        steps.forEach((step, index) => {
+          ScrollTrigger.create({
+            trigger: step,
+            start: "top top+=100", // stick when top of step hits 100px from top (below h2)
+            end: () => {
+              const height = step.offsetHeight;
+              return `+=${height}`;
+            },
+            pin: true,
+            pinSpacing: false,
+            markers: false,
+          });
         });
-      });
+      }
     </script>
   </body>
 </html>
